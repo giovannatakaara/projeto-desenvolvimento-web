@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/register" method="get">
+
+        <h1>Preencha o Formulario</h1>
+        <fieldset>
+            <legend>Crie sua conta</legend>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+
+            <label for="password">Senha (Minimo 8 caracteres):</label>
+            <input type="password" id="senha" name="senha" minlength="8" required>
+
+            <h2>Gênero:</h2>
+            <input type="radio" name="genero" id="Feminino" required>
+            <label for="text">Feminino</label>
+
+            <input type="radio" name="genero" id="Masculino" required>
+            <label for="text">Masculino</label>
+            
+            <h2>Biografia:</h2>
+            
+            <textarea name="Biografia:" id="Biografia" placeholder="Digite sua biografia aqui:" rows="5" required></textarea>
+            
+            <input type="checkbox" required>
+            <label for="text">Concordo com os termos de uso.</label>
+
+        </fieldset>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+       
+    </form> 
+           
+</body>
+</html>
